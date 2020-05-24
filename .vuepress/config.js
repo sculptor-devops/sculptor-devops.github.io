@@ -18,7 +18,6 @@ module.exports = {
 		],
 	],
 
-
 	themeConfig: {
 
 		logo: "/assets/img/statue.svg",
@@ -34,7 +33,7 @@ module.exports = {
 		sidebarDepth: 0,
 		sidebar: [
 			{ title: "Getting Started", collapsable: false, children: ["introduction", "installation"] },
-			{ title: "Customize", collapsable: true, children: ["/installer/"] },
+			{ title: "Customize", collapsable: true, children: ["/customization/"] },
 		]
 	}
 }
