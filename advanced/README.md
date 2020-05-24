@@ -59,6 +59,10 @@ Run time taken 00:00:00
 ## Customized stages
 You can create a custom stage list creating a yml with the desidered stages. For example if you want to install a Nginx/Mysql machine you can delete the agent installation.
 
+::: warning
+All steps need to be run after credential steps that prepare the env, do not remove. The MySql step cannot be run twice if already installed, you need to purge installation and content.
+:::
+
 ``` bash
 ./installer config
 Writing customizable /root/sculptor/installer.yml

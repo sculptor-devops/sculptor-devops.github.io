@@ -4,7 +4,7 @@ heroImage: /assets/img/statue.svg
 heroText: SCULPTOR
 tagline: Virtual Devops Automation for Web Developers
 actionText: Get Started →
-actionLink: /installation/
+actionLink: /introduction/
 features:
 - title: Ready and Secure
   details: Install an entire machine with PHP, Nginx, MySql, Redis with no action. Automated backup and security patch out of the box.

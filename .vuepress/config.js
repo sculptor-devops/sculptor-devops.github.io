@@ -32,8 +32,16 @@ module.exports = {
 
 		sidebarDepth: 0,
 		sidebar: [
-			{ title: "Getting Started", collapsable: false, children: ["introduction", "installation"] },
-			{ title: "Customize", collapsable: true, children: ["/customization/"] },
+			{
+				title: "Getting Started", collapsable: false, children: [
+					"introduction",
+					"installation",
+					"compatibility",
+					"versions",
+					"troubleshooting"
+				]
+			},
+			{ title: "Advanced", collapsable: true, children: ["/advanced/"] },
 		]
 	}
 }
