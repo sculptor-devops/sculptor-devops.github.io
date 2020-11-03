@@ -26,7 +26,7 @@
                     <!-- Insert analytics code here -->
         
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=96ba5c8ca6336e9c3922">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=e2b863fa0cc45133beca">
 
         <link rel="stylesheet" href="/assets/cast/asciinema-player.css" rel="stylesheet">
 
@@ -539,7 +539,28 @@ Package upgraded
 | php7.4-fpm (7.4.3-4ubuntu2.4)                      |
 +----------------------------------------------------+
 Between 2020-10-15 06:48:07 and 2020-10-15 06:50:01
+</code></pre>
 
+<h2 id="firewall">Firewall</h2>
+
+<p>Unde the hood Sculptor use uwf and it setup on the installer stage. You can manage with a simple command line interface to <strong><em>show</em></strong>, <strong><em>reset</em></strong>, <strong><em>enable</em></strong> and <strong><em>disable</em></strong>.</p>
+
+<pre><code class="language-shell">$ sudo sculptor system:firewall
+Firewall show: ✔
+Active YES
++-------+-------------------------------------------------------------------+
+| Index | Rule                                                              |
++-------+-------------------------------------------------------------------+
+| 1     | 9443/tcp                   ALLOW IN    Anywhere                   |
+| 2     | 22/tcp                     ALLOW IN    Anywhere                   |
+| 3     | 80/tcp                     ALLOW IN    Anywhere                   |
+| 4     | 443/tcp                    ALLOW IN    Anywhere                   |
+| 5     | Nginx Full                 ALLOW IN    Anywhere                   |
+| 6     | 9443/tcp (v6)              ALLOW IN    Anywhere (v6)              |
+| 7     | 22/tcp (v6)                ALLOW IN    Anywhere (v6)              |
+| 8     | 80/tcp (v6)                ALLOW IN    Anywhere (v6)              |
+| 9     | 443/tcp (v6)               ALLOW IN    Anywhere (v6)              |
++-------+-------------------------------------------------------------------+
 </code></pre>
         </div>
     </div>
