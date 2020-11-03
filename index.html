@@ -26,7 +26,9 @@
                     <!-- Insert analytics code here -->
         
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=74252576ef326e536532">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=bd0d42409b0a37f242bc">
+
+        <link rel="stylesheet" href="/assets/cast/asciinema-player.css" rel="stylesheet">
 
             </head>
 
@@ -35,9 +37,7 @@
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="Sculptor home" class="inline-flex items-center">
-																	
-							<img class="h-8 md:h-10 mr-3" src="/assets/img/logo-large.svg" alt="Sculptor logo" />						
-												
+					    <img class="h-8 md:h-10 mr-3" src="/assets/img/logo-large.svg" alt="Sculptor logo" />											
 	                    <h1 class="text-lg md:text-2xl text-blue-900 font-semibold hover:text-blue-600 my-0 pr-4">Sculptor</h1>
                     </a>
                 </div>
@@ -57,6 +57,7 @@
             <section class="container max-w-6xl mx-auto px-6 py-10 md:py-12">
     <div class="flex flex-col-reverse mb-10 lg:flex-row lg:mb-24">
         <div class="mt-8">
+            
             <h1 id="intro-docs-template">Sculptor</h1>
 
             <h2 id="intro-powered-by-jigsaw" class="font-light mt-4">Beautiful automated server administrator</h2>
@@ -70,7 +71,9 @@
             </div>
         </div>
 
-        <img src="/assets/img/logo-large.svg" alt="Sculptor large logo" class="mx-auto mb-6 lg:mb-0 ">
+        <div class="mx-auto mb-6 lg:mb-0 overflow-hidden w-full lg:w-2/3 xl:w-2/3 shadow-md border rounded-md bg-gray-300" style="background-color: #002B36;">
+           <asciinema-player preload="true" theme="solarized-dark" autoplay="true" cols="80" rows="24" speed="8" src="/assets/cast/installation_ubuntu18.cast"></asciinema-player>
+        </div>
     </div>
 
     <hr class="block my-8 border lg:hidden">
@@ -143,6 +146,7 @@
         </main>
 
         <script src="/assets/build/js/main.js?id=a6205a297b7645c123b0"></script>
+        <script src="/assets/cast/asciinema-player.js"></script>
 
         
         <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
