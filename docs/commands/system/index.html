@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Sculptor devops system commands">
+
+        <meta property="og:site_name" content="Sculptor"/>
+        <meta property="og:title" content="System | Sculptor"/>
+        <meta property="og:description" content="Sculptor devops system commands"/>
+        <meta property="og:url" content="https://https://sculptor-devops.github.io/docs\commands/system"/>
+        <meta property="og:image" content="/assets/img/logo.png"/>
+        <meta property="og:type" content="website"/>
+
+        <meta name="twitter:image:alt" content="Sculptor">
+        <meta name="twitter:card" content="summary_large_image">
+
+        
+        <title>Sculptor | System</title>
+
+        <link rel="home" href="https://https://sculptor-devops.github.io">
+        <link rel="icon" href="/favicon.ico">
+
+        
+                    <!-- Insert analytics code here -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=74252576ef326e536532">
+
+            </head>
+
+    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
+        <header class="flex items-center bg-white border-b h-24 mb-8  xl:mb-0 lg:mb-0 py-4" role="banner">
+            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
+                <div class="flex items-center">
+                    <a href="/" title="Sculptor home" class="inline-flex items-center">
+																	
+							<img class="h-8 md:h-10 mr-3" src="/assets/img/logo-large.svg" alt="Sculptor logo" />						
+												
+	                    <h1 class="text-lg md:text-2xl text-blue-900 font-semibold hover:text-blue-600 my-0 pr-4">Sculptor</h1>
+                    </a>
+                </div>
+
+                <div class="flex flex-1 justify-end items-center text-right md:pl-10">
+                    
+					<a href="https://sculptor-devops.github.io/" target="_blank" class="mr-4 hidden lg:block">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+				
+                                    </div>
+            </div>
+
+                <button class="flex justify-center items-center bg-blue-500 border border-blue-500 h-10 mr-4 px-5 rounded-full lg:hidden focus:outline-none"
+    onclick="navMenu.toggle()"
+>
+    <svg id="js-nav-menu-show" xmlns="http://www.w3.org/2000/svg"
+        class="fill-current text-white h-9 w-4" viewBox="0 0 32 32"
+    >
+        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+    </svg>
+
+    <svg id="js-nav-menu-hide" xmlns="http://www.w3.org/2000/svg"
+        class="hidden fill-current text-white h-9 w-4" viewBox="0 0 36 30"
+    >
+        <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
+    </svg>
+</button>
+
+        </header>
+
+        <main role="main" class="w-full flex-auto bg-main">
+            <section class="container max-w-8xl mx-auto px-6 md:px-8 py-4">
+    <div class="flex flex-col lg:flex-row">
+        <nav id="js-nav-menu" class="nav-menu hidden lg:block">
+            <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/introduction"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Introduction
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Getting Started
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Installation
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started/create-domain"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Create a domain
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started/moving-forward"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Move forward
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started/troubleshooting"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Troubleshooting
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/commands/domains"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Commands
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/commands/domains"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Domains
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/commands/deploy"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Deploy
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/commands/databases"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Databases
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/commands/backups"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Backups
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/commands/system"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            System
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/platform/compatibility"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Platform
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/platform/compatibility"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Compatibility
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/platform/software"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Software
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/platform/security"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Security
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/advanced/installer"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Advanced
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/advanced/installer"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Installer
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/roadmap"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Roadmap
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/upgrade"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Upgrade
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/contribute"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Contribute
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/about"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            About
+        </a>
+    
+    </li>
+    </ul>
+        </nav>
+
+        <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
+            <h1>System</h1>
+
+<p>Sculptor caracteristics can be consulted using the command below, will show the summary of the installed system.</p>
+
+<pre><code class="language-shell">$ sudo sculptor system:info
++-------------------+---------------------------+
+| Name              | Value                     |
++-------------------+---------------------------+
+| Name              | Sculptor Devops           |
+| URL               | https://192.168.1.10:9443 |
+| PHP               | 7.4                       |
+| DB                | mysql                     |
+| Command version   | 1                         |
+| API version       | 0                         |
+| Blueprint version | 1                         |
+| Operating system  | 20.04.1 LTS (Focal Fossa) |
+| Architecture      | x86_64 64 bit             |
++-------------------+---------------------------+
+</code></pre>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>There are some values that can be customized, you can see the current status with this command.</p>
+
+<pre><code class="language-shell">$ sudo sculptor system:configuration show
+</code></pre>
+
+<table>
+<thead>
+<tr>
+  <th>Parameter</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>sculptor.domains.state-machine</strong></td>
+  <td>Enable or disable the domain state check</td>
+</tr>
+<tr>
+  <td><strong>sculptor.security.hash</strong></td>
+  <td>Hashing algorithm used by the php hash funciton</td>
+</tr>
+<tr>
+  <td><strong>sculptor.security.password.min</strong></td>
+  <td>Minumum password length</td>
+</tr>
+<tr>
+  <td><strong>sculptor.security.password.max</strong></td>
+  <td>Maximum password length</td>
+</tr>
+<tr>
+  <td><strong>sculptor.monitors.rotate</strong></td>
+  <td>How many minutes of system monitor to retain in memory</td>
+</tr>
+<tr>
+  <td><strong>sculptor.backup.archive</strong></td>
+  <td>Which archive driver to use, local or s3</td>
+</tr>
+<tr>
+  <td><strong>sculptor.backup.temp</strong></td>
+  <td>The local path to use as temp for backup compression</td>
+</tr>
+<tr>
+  <td><strong>sculptor.backup.compression</strong></td>
+  <td>Type of compression, for now only zip is supported</td>
+</tr>
+<tr>
+  <td><strong>sculptor.backup.drivers.default</strong></td>
+  <td>Default archive driver</td>
+</tr>
+<tr>
+  <td><strong>sculptor.backup.drivers.local.path</strong></td>
+  <td>Where the local archive driver put backup</td>
+</tr>
+<tr>
+  <td><strong>sculptor.backup.drivers.s3.path</strong></td>
+  <td>Where the s3 archive driver put backup</td>
+</tr>
+<tr>
+  <td><strong>sculptor.backup.drivers.s3.key</strong></td>
+  <td>S3 key</td>
+</tr>
+<tr>
+  <td><strong>sculptor.backup.drivers.s3.secret</strong></td>
+  <td>S3 secret</td>
+</tr>
+<tr>
+  <td><strong>sculptor.backup.drivers.s3.region</strong></td>
+  <td>S3 region</td>
+</tr>
+<tr>
+  <td><strong>sculptor.backup.drivers.s3.endpoint</strong></td>
+  <td>S3 https endpoint</td>
+</tr>
+<tr>
+  <td><strong>sculptor.backup.drivers.s3.bucket</strong></td>
+  <td>S3 bucket name</td>
+</tr>
+</tbody>
+</table>
+
+<p>Each values can be changed using <strong><em>set</em></strong> operation; this value can be also restored to default using <strong><em>reset</em></strong> option in the command example below. You can also <strong><em>clear</em></strong> all setting restoring to default values.</p>
+
+<pre><code class="language-shell">$ sudo sculptor system:configuration set sculptor.security.hash sha256
+
+$ sudo sculptor system:configuration reset sculptor.security.hash
+
+$ sudo sculptor system:configuration clear
+</code></pre>
+
+<p>If you prefer the <strong><em>.env</em></strong> approach you can edit the application directly editing this file, for details on every single parameter see <strong><em>config/sculptor.php</em></strong> file; in this case the blueprint will backup in the same way but not will be restored the same way, you will have to redo it manually.</p>
+
+<h2 id="dameons">Daemons</h2>
+
+<p>System daemons are gouped by type, all web related one or queue related, with this command you can do the operation such as restart or reloat to all related services.</p>
+
+<pre><code class="language-shell">$ sudo sculptor system:daemons show
+Running  show: ✔
++------------+----------+---------+
+| Service    | Group    | Running |
++------------+----------+---------+
+| mysql      | DATABASE | YES     |
+| nginx      | WEB      | YES     |
+| php7.4-fpm | WEB      | YES     |
+| redis      | QUEUE    | YES     |
+| supervisor | QUEUE    | YES     |
+| ssh        | REMOTE   | YES     |
+| fail2ban   | REMOTE   | YES     |
++------------+----------+---------+
+show
+use enable, disable, start, restart, reload, stop, status on database, web, queue, remote
+</code></pre>
+
+<p>Valid groups are <strong><em>database</em></strong>, <strong><em>web</em></strong>, <strong><em>queue</em></strong>, <strong><em>remote</em></strong> (see show command to see related services). On every group you can run <strong><em>enable</em></strong>, <strong><em>disable</em></strong>, <strong><em>start</em></strong>, <strong><em>restart</em></strong>, <strong><em>reload</em></strong>, <strong><em>stop</em></strong>, <strong><em>status</em></strong> as normal daemons command.</p>
+
+<h2 id="events">Events</h2>
+
+<p>You can access to recet events from the command line, default page is 25 row long and paginated, you can specify the page ad second parameter.</p>
+
+<pre><code class="language-shell">$ sudo sculptor system:events
++------------------+---------+-------+-----------------------------+
+| Date/Time        | Tag     | Level | Message                     |
++------------------+---------+-------+-----------------------------+
+| 2020-11-02 10:51 | actions | info  | Create database my_database |
++------------------+---------+-------+-----------------------------+
+</code></pre>
+
+<h2 id="tasks">Tasks</h2>
+
+<p>As seen for events also tasks can be shown to see status or errors; those tasks run within an hi privileged queue to manage the machine and every row represents a job such as change domain configuration, deploy, backup ad so on.</p>
+
+<pre><code class="language-shell">$ sudo sculptor system:tasks
+</code></pre>
+
+<h2 id="monitors">Monitors</h2>
+
+<p>Every minute the system sample a group of monitors that you can consult to know the machine state history; for the number of samples retained see the syem configuration parameter <strong><em>sculptor.monitors.rotate</em></strong>. The command with no parameters show the last sample.</p>
+
+<pre><code class="language-shell">$ sudo sculptor system:monitors
+Monitors show: ✔
++-------------+---------------------+
+| Monitor     | Value               |
++-------------+---------------------+
+| Cpu load    | 0.11                |
+| sda free    | 49GB                |
+| sda total   | 62GB                |
+| sda tps     | 3.58                |
+| sda reads/s | 35.86 kB            |
+| sda write/s | 71.14 kB            |
+| Ram total   | 2GB                 |
+| Ram used    | 781MB               |
+| Uptime      | 3 d 0 h 4 m         |
+| Timestamp   | 2020-10-30 11:15:02 |
++-------------+---------------------+
+</code></pre>
+
+<blockquote>
+  <p>Monitors are stored in memory, do not raise too mouch rotate value!</p>
+</blockquote>
+
+<p>You can also see all samples in memory by running a <strong><em>all</em></strong> operation, all columns will be human readable. Use <strong><em>reset</em></strong> command to clear all the sampled data.</p>
+
+<pre><code class="language-shell">$ sudo sculptor system:monitors all
+Monitors all: ✔
++----------+----------+-----------+---------+-------------+-------------+-----------+----------+---------------+---------------------+
+| Cpu load | sda free | sda total | sda tps | sda reads/s | sda write/s | Ram total | Ram used | Uptime        | Timestamp           |
++----------+----------+-----------+---------+-------------+-------------+-----------+----------+---------------+---------------------+
+| 0.04     | 49GB     | 62GB      | 3.58    | 36.35 kB    | 71.66 kB    | 2GB       | 766MB    | 2 d 23 h 5 m  | 2020-10-30 10:16:02 |
+| 0.15     | 49GB     | 62GB      | 3.58    | 36.34 kB    | 71.66 kB    | 2GB       | 766MB    | 2 d 23 h 6 m  | 2020-10-30 10:17:01 |
++----------+----------+-----------+---------+-------------+-------------+-----------+----------+---------------+---------------------+
+
+$ sudo sculptor system:monitors reset
+</code></pre>
+
+<h2 id="upgrades">Upgrades</h2>
+
+<p>The system perform autonomous unattended upgrades and there is no need to act in any direction. But you can need to know when performed and which package were
+upgraded. With this commads you can have a log of each performed upgrade and you can see the detail of every operation.</p>
+
+<pre><code class="language-shell">$ sudo sculptor system:upgrades
++-------------------+--------+
+| Setting           | Status |
++-------------------+--------+
+| Active            | YES    |
+| Upgraded recently | NO     |
++-------------------+--------+
++-------+-----------------------------------+----------+
+| Index | Event                             | Packages |
++-------+-----------------------------------+----------+
+| 1     | Thu Oct 08 2020 06:52:39 GMT+0000 | 13       |
+| 2     | Thu Oct 15 2020 06:49:18 GMT+0000 | 20       |
+| 3     | Fri Oct 16 2020 06:37:21 GMT+0000 | 0        |
+| 4     | Wed Oct 21 2020 06:09:42 GMT+0000 | 9        |
+| 5     | Tue Oct 27 2020 06:33:54 GMT+0000 | 4        |
+| 6     | Wed Oct 28 2020 06:13:46 GMT+0000 | 7        |
+| 7     | Thu Oct 29 2020 06:25:31 GMT+0000 | 2        |
++-------+-----------------------------------+----------+
+
+Use system:upgrades &lt;INDEX&gt; to show complete event
+
+$ sudo sculptor system:upgrades 7
++------------------------------------------------------------------------------------------+
+| Selecting previously unselected package linux-modules-5.4.0-51-generic.                  |
+| .....                                                                                    |
+| Processing triggers for php7.4-fpm (7.4.3-4ubuntu2.4) ...                                |
++------------------------------------------------------------------------------------------+
+Package upgraded
++----------------------------------------------------+
+| linux-headers-5.4.0-51 (5.4.0-51.56)               |
+| linux-modules-5.4.0-51-generic (5.4.0-51.56)       |
+| linux-headers-5.4.0-51-generic (5.4.0-51.56)       |
+| linux-headers-generic (5.4.0.51.54)                |
+| linux-image-5.4.0-51-generic (5.4.0-51.56)         |
+| linux-modules-extra-5.4.0-51-generic (5.4.0-51.56) |
+| linux-image-generic (5.4.0.51.54)                  |
+| linux-generic (5.4.0.51.54)                        |
+| php7.4-common (7.4.3-4ubuntu2.4)                   |
+| php7.4-mysql (7.4.3-4ubuntu2.4)                    |
+| php7.4-bcmath (7.4.3-4ubuntu2.4)                   |
+| php7.4-readline (7.4.3-4ubuntu2.4)                 |
+| php7.4-mbstring (7.4.3-4ubuntu2.4)                 |
+| php7.4-zip (7.4.3-4ubuntu2.4)                      |
+| php7.4-opcache (7.4.3-4ubuntu2.4)                  |
+| php7.4-sqlite3 (7.4.3-4ubuntu2.4)                  |
+| php7.4-json (7.4.3-4ubuntu2.4)                     |
+| php7.4-xml (7.4.3-4ubuntu2.4)                      |
+| php7.4-cli (7.4.3-4ubuntu2.4)                      |
+| php7.4-fpm (7.4.3-4ubuntu2.4)                      |
++----------------------------------------------------+
+Between 2020-10-15 06:48:07 and 2020-10-15 06:50:01
+
+</code></pre>
+        </div>
+    </div>
+</section>
+        </main>
+
+        <script src="/assets/build/js/main.js?id=a6205a297b7645c123b0"></script>
+
+        <script>
+    const navMenu = {
+        toggle() {
+            const menu = document.getElementById('js-nav-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('lg:block');
+            document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
+            document.getElementById('js-nav-menu-show').classList.toggle('hidden');
+        },
+    }
+</script>
+
+        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+            <ul class="flex flex-col md:flex-row justify-center">
+                <li class="md:mr-2">
+                    &copy; <a href="https://cappellozza.com" title="Alessandro Cappellozza">Alessandro Cappellozza</a> 2020.
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Sculptor devops domains commands">
+
+        <meta property="og:site_name" content="Sculptor"/>
+        <meta property="og:title" content="Domains | Sculptor"/>
+        <meta property="og:description" content="Sculptor devops domains commands"/>
+        <meta property="og:url" content="https://https://sculptor-devops.github.io/docs\commands/domains"/>
+        <meta property="og:image" content="/assets/img/logo.png"/>
+        <meta property="og:type" content="website"/>
+
+        <meta name="twitter:image:alt" content="Sculptor">
+        <meta name="twitter:card" content="summary_large_image">
+
+        
+        <title>Sculptor | Domains</title>
+
+        <link rel="home" href="https://https://sculptor-devops.github.io">
+        <link rel="icon" href="/favicon.ico">
+
+        
+                    <!-- Insert analytics code here -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=74252576ef326e536532">
+
+            </head>
+
+    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
+        <header class="flex items-center bg-white border-b h-24 mb-8  xl:mb-0 lg:mb-0 py-4" role="banner">
+            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
+                <div class="flex items-center">
+                    <a href="/" title="Sculptor home" class="inline-flex items-center">
+																	
+							<img class="h-8 md:h-10 mr-3" src="/assets/img/logo-large.svg" alt="Sculptor logo" />						
+												
+	                    <h1 class="text-lg md:text-2xl text-blue-900 font-semibold hover:text-blue-600 my-0 pr-4">Sculptor</h1>
+                    </a>
+                </div>
+
+                <div class="flex flex-1 justify-end items-center text-right md:pl-10">
+                    
+					<a href="https://sculptor-devops.github.io/" target="_blank" class="mr-4 hidden lg:block">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+				
+                                    </div>
+            </div>
+
+                <button class="flex justify-center items-center bg-blue-500 border border-blue-500 h-10 mr-4 px-5 rounded-full lg:hidden focus:outline-none"
+    onclick="navMenu.toggle()"
+>
+    <svg id="js-nav-menu-show" xmlns="http://www.w3.org/2000/svg"
+        class="fill-current text-white h-9 w-4" viewBox="0 0 32 32"
+    >
+        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+    </svg>
+
+    <svg id="js-nav-menu-hide" xmlns="http://www.w3.org/2000/svg"
+        class="hidden fill-current text-white h-9 w-4" viewBox="0 0 36 30"
+    >
+        <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
+    </svg>
+</button>
+
+        </header>
+
+        <main role="main" class="w-full flex-auto bg-main">
+            <section class="container max-w-8xl mx-auto px-6 md:px-8 py-4">
+    <div class="flex flex-col lg:flex-row">
+        <nav id="js-nav-menu" class="nav-menu hidden lg:block">
+            <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/introduction"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Introduction
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Getting Started
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Installation
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started/create-domain"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Create a domain
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started/moving-forward"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Move forward
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started/troubleshooting"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Troubleshooting
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/commands/domains"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Commands
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/commands/domains"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Domains
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/commands/deploy"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Deploy
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/commands/databases"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Databases
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/commands/backups"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Backups
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/commands/system"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            System
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/platform/compatibility"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Platform
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/platform/compatibility"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Compatibility
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/platform/software"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Software
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/platform/security"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Security
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/advanced/installer"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Advanced
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/advanced/installer"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Installer
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/roadmap"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Roadmap
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/upgrade"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Upgrade
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/contribute"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Contribute
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/about"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            About
+        </a>
+    
+    </li>
+    </ul>
+        </nav>
+
+        <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
+            <h1 id="domains">Domains</h1>
+
+<p>Ay domain is a web server host that have some properties like alias or SSL certificates.
+The domain have a life cycle that is shown by the figure below. Generally you create it, you setup your parameters and condifurations, you apply those preferences
+and deploy to production pulling sources. The system take care that every step is respected and will check every state change.</p>
+
+<p><img src="/assets/img/states.png" alt="domain states" /></p>
+
+<h2 id="create">Create (New)</h2>
+
+<p>This command will create site home, configurations, files templates and base a certificate. No web server setup will be done at this stage,
+you will need to use <strong><em>setup</em></strong> and <strong><em>configure</em></strong> before <strong><em>deploy</em></strong> it. Parameters accepted are <strong><em>laravel</em></strong> and <strong><em>generic</em></strong>.</p>
+
+<pre><code class="language-shell">$ sudo sculptor domain:create example.com laravel
+Running create domain example.com: ✔
+</code></pre>
+
+<blockquote>
+  <p>Every specialized domain type such as <strong><em>laravel</em></strong> have a standard and functional set of configurations
+  if you use <strong><em>generic</em></strong> keep in mind that before deploy you need to setup at least the deployer.php file accordingly with your needs.</p>
+</blockquote>
+
+<h4 id="structure">Directory structure</h4>
+
+<p>Create command will create this directory structure; cert and logs are folders used by the webserver. Config is a template directory,
+it contains templates of all your domain configuration; if you need to customize something you should do it here. In the root of the
+domain you will find the compiled files that all services will use, are created from the configs folder files. Shared folder is the path where your application have to write all data, see delply for more informations. 
+Current and releases are not present at the beginning, those folders are needed by the deploy stage that will pull sources from you repository.</p>
+
+<pre><code class="language-shell">$ cd /home/www/sites/example.com
+$ ls -l
+certs/
+        example.com.crt
+        example.com.key
+configs/
+        env
+        deployer.php
+        logrotate.conf
+        nginx.conf
+        cron.conf
+        worker.conf
+logs/
+        access_log
+        error_log
+shared/
+        .env
+        storage/
+cron.conf
+worker.conf
+deploy.php
+releases/
+current/
+</code></pre>
+
+<blockquote>
+  <p>Do not remove any of the created files or folders, all error can stop the web server and all domains!</p>
+</blockquote>
+
+<h2 id="show">Show</h2>
+
+<p>You can list all domains with this command, without parameters all domains will be shown but you can specify a domain name and a complete list of
+parameters will show up. When you show a specific domain some of the fields are calculated such as deploy url or root domain.</p>
+
+<pre><code class="language-shell">$ sudo sculptor domain:show 
++--------------+-------+---------+----------+----------+------+
+| Name         | Alias | Type    | Status   | Database | User |
++--------------+-------+---------+----------+----------+------+
+| example.com  | none  | laravel | deployed | none     | none |
++--------------+-------+---------+----------+----------+------+
+
+$ sudo sculptor domain:show example.com
++------------------+-----------------------------------------------------------+
+| Name             | Value                                                     |
++------------------+-----------------------------------------------------------+
+| name             | example.com                                               |
+| alias            | none                                                      |
+| type             | laravel                                                   |
+| status           | deployed                                                  |
+| certificate type | self-signed                                               |
+| www              | NO                                                        |
+| user             | www                                                       |
+| root             | /home/www/sites/example.com                               |
+| http user        | none                                                      |
+| home             | /home/www/sites/example.com/current/public                |
+| database         | none                                                      |
+| deploy command   | deploy                                                    |
+| install command  | deploy:install                                            |
+| git uri          | https://github.com/laravel/laravel.git                    |
+| deploy url       | https://192.168.1.100:9443/api/v1/deploy/abcd123/123456   |
+| deploy branch    | master                                                    |
++------------------+-----------------------------------------------------------+
+</code></pre>
+
+<h2 id="setup">Setup</h2>
+
+<p>Every domain is created with a standard bunch of parameters, if you need to customize some you have to use <strong><em>setup</em></strong> to change it.
+For example if you need to change aliases, domain type or git url you need to use this command. You can use this command in every
+domain state, after it you need to run <strong><em>configure</em></strong> to apply changes to the configuration files.</p>
+
+<pre><code class="language-shell">$ domain:setup example.com alias other-example.com
+Running domain setup example.com alias=other-example.com: ✔
+</code></pre>
+
+<h4>Valid parameters</h4>
+
+<table>
+<thead>
+<tr>
+  <th>Parameter</th>
+  <th>Default</th>
+  <th>Values</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>type</strong></td>
+  <td>laravel</td>
+  <td>laravel, generic</td>
+  <td>this parameter will be used to determinate site template</td>
+</tr>
+<tr>
+  <td><strong>alias</strong></td>
+  <td>null</td>
+  <td>space separated domain</td>
+  <td>all the aliases of the domain that we have created, this parameter will be added to server host in web server configuration</td>
+</tr>
+<tr>
+  <td><strong>www</strong></td>
+  <td>true</td>
+  <td>true, false</td>
+  <td>if you set this to true the system will setup example.com and www.example.com site names, if is false only main name and aliases will be used</td>
+</tr>
+<tr>
+  <td><strong>certificate</strong></td>
+  <td>self-signed</td>
+  <td>self-signed, custom, lets-encrypt</td>
+  <td>you can load your custom certificates if you need to.</td>
+</tr>
+<tr>
+  <td><strong>email</strong></td>
+  <td>null</td>
+  <td>string</td>
+  <td>this address is needed in case of Let's Encrypt certificate, to provide an email address for the registration.</td>
+</tr>
+<tr>
+  <td><strong>vcs</strong></td>
+  <td>git url</td>
+  <td>string</td>
+  <td>this is the git url of your repository, you can use every git compatible provider such as GitHub, GitLab, Bitbucket or a custom one.</td>
+</tr>
+<tr>
+  <td><strong>branch</strong></td>
+  <td>master</td>
+  <td>string</td>
+  <td>this parameter is needed by the system to know what to clone and in case of use of the push webhook to monitor changes.</td>
+</tr>
+<tr>
+  <td><strong>deployer</strong></td>
+  <td>deploy</td>
+  <td>string</td>
+  <td>this is the parameter passed to the deployer command to run this stage; see deploy section for more informations.</td>
+</tr>
+<tr>
+  <td><strong>install</strong></td>
+  <td>deploy:install</td>
+  <td>string</td>
+  <td>is the same of the deployer parameter but only used the first time e.g. when you need to do generate key in a laravel application.</td>
+</tr>
+<tr>
+  <td><strong>token</strong></td>
+  <td>autogenerated</td>
+  <td>string</td>
+  <td>is the secret token used in the git webhook to secure the post, in the creation stage the token is setup automatically.</td>
+</tr>
+<tr>
+  <td><strong>provider</strong></td>
+  <td>github</td>
+  <td>github, custom</td>
+  <td>is the git provider, needed by the webhook to validate the request, valid values are custom and github.</td>
+</tr>
+<tr>
+  <td><strong>home</strong></td>
+  <td>public</td>
+  <td>string</td>
+  <td>it the folder used by the webserver to show on the web, the default is public.</td>
+</tr>
+<tr>
+  <td><strong>database</strong></td>
+  <td>null</td>
+  <td>string</td>
+  <td>is the database that the application will use, must be a valid one.</td>
+</tr>
+<tr>
+  <td><strong>user</strong></td>
+  <td>null</td>
+  <td>string</td>
+  <td>is the user needed by the database parameter to access to the db.</td>
+</tr>
+</tbody>
+</table>
+
+<h4>Edit Templates</h4>
+
+<p>In the <strong><em>configs/</em></strong> (see directory structure) folder you can apply your modifications to fit your needs, after this operation you can run <strong><em>configure</em></strong> to create the new configurations. In all files you can use some
+placehoders to auto complete some values. For instance when you crete a <strong>.env</strong> file you need to add database, user and password to create a valid and functional file; sculptor do it for you
+completing those parameters with the setup of the domain, so you don't need to know passwords or remember user or database that are stored elsewhere and linked to your domain.</p>
+
+<h4>Placeholders</h4>
+
+<table>
+<thead>
+<tr>
+  <th>Parameter</th>
+  <th>File</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>{DOMAINS}</strong></td>
+  <td>all</td>
+  <td>aa</td>
+</tr>
+<tr>
+  <td><strong>{URL}</strong></td>
+  <td>all</td>
+  <td>The mail url of the domain https://example.com</td>
+</tr>
+<tr>
+  <td><strong>{USER}</strong></td>
+  <td>all</td>
+  <td>The system user that run every script tha for now is always www</td>
+</tr>
+<tr>
+  <td><strong>{NAME}</strong></td>
+  <td>all</td>
+  <td>The domain name as recorded on the db</td>
+</tr>
+<tr>
+  <td><strong>{PATH}</strong></td>
+  <td>all</td>
+  <td>The system root path e.g /home/www/sites/example.com</td>
+</tr>
+<tr>
+  <td><strong>{HOME}</strong></td>
+  <td>all</td>
+  <td>The home as recorded in the db, the default is public</td>
+</tr>
+<tr>
+  <td><strong>{PUBLIC}</strong></td>
+  <td>all</td>
+  <td>The home directory e.g. /home/www/sites/example.com/current/public</td>
+</tr>
+<tr>
+  <td><strong>{REPOSITORY}</strong></td>
+  <td>deployer.php</td>
+  <td>The url of the repository, see vcs setup parameter</td>
+</tr>
+<tr>
+  <td><strong>{BRANCH}</strong></td>
+  <td>deployer.php</td>
+  <td>The branch of the repository, see branch setup parameter</td>
+</tr>
+<tr>
+  <td><strong>{DATABASE}</strong></td>
+  <td>env</td>
+  <td>The name of the database linket to this domain</td>
+</tr>
+<tr>
+  <td><strong>{DATABASE_USERNAME}</strong></td>
+  <td>env</td>
+  <td>The username lined to tho this domain</td>
+</tr>
+<tr>
+  <td><strong>{DATABASE_PASSWORD}</strong></td>
+  <td>env</td>
+  <td>The user associated password</td>
+</tr>
+<tr>
+  <td><strong>{DOMAINS}</strong></td>
+  <td>nginx.conf</td>
+  <td>The list of domains and alias e.g. example.com www.example.com example2.com</td>
+</tr>
+<tr>
+  <td><strong>{CERTIFICATE}</strong></td>
+  <td>nginx.conf</td>
+  <td>The complete path of the certificate file</td>
+</tr>
+<tr>
+  <td><strong>{CERTIFICATE_KEY}</strong></td>
+  <td>nginx.conf</td>
+  <td>The complete path of the key file</td>
+</tr>
+<tr>
+  <td><strong>{RETAIN}</strong></td>
+  <td>logrotate.conf</td>
+  <td>How many days of log you want to maintain</td>
+</tr>
+<tr>
+  <td><strong>{COUNT}</strong></td>
+  <td>worker</td>
+  <td>The number of workers to spawn</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="configure">Configure</h2>
+
+<p>When you <strong><em>setup</em></strong> a domain or modify a template configuration you need to run configure to apply those modifications. All files will be created or updated in the site root path.</p>
+
+<pre><code class="language-shell">$ sudo sculptor domain:configure example.com
+Running domain condifugre example.com: ✔
+</code></pre>
+
+<h2 id="delete">Delete</h2>
+
+<p>This operation will remove the domain from web server hosts and delete the root folder of the domain, database and user will remain intact.</p>
+
+<pre><code class="language-shell">$ domain:delete example.com
+Running domain delete example.com: ✔
+</code></pre>
+        </div>
+    </div>
+</section>
+        </main>
+
+        <script src="/assets/build/js/main.js?id=a6205a297b7645c123b0"></script>
+
+        <script>
+    const navMenu = {
+        toggle() {
+            const menu = document.getElementById('js-nav-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('lg:block');
+            document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
+            document.getElementById('js-nav-menu-show').classList.toggle('hidden');
+        },
+    }
+</script>
+
+        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+            <ul class="flex flex-col md:flex-row justify-center">
+                <li class="md:mr-2">
+                    &copy; <a href="https://cappellozza.com" title="Alessandro Cappellozza">Alessandro Cappellozza</a> 2020.
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Sculptor devops deploy commands">
+
+        <meta property="og:site_name" content="Sculptor"/>
+        <meta property="og:title" content="Deploy | Sculptor"/>
+        <meta property="og:description" content="Sculptor devops deploy commands"/>
+        <meta property="og:url" content="https://https://sculptor-devops.github.io/docs\commands/deploy"/>
+        <meta property="og:image" content="/assets/img/logo.png"/>
+        <meta property="og:type" content="website"/>
+
+        <meta name="twitter:image:alt" content="Sculptor">
+        <meta name="twitter:card" content="summary_large_image">
+
+        
+        <title>Sculptor | Deploy</title>
+
+        <link rel="home" href="https://https://sculptor-devops.github.io">
+        <link rel="icon" href="/favicon.ico">
+
+        
+                    <!-- Insert analytics code here -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=74252576ef326e536532">
+
+            </head>
+
+    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
+        <header class="flex items-center bg-white border-b h-24 mb-8  xl:mb-0 lg:mb-0 py-4" role="banner">
+            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
+                <div class="flex items-center">
+                    <a href="/" title="Sculptor home" class="inline-flex items-center">
+																	
+							<img class="h-8 md:h-10 mr-3" src="/assets/img/logo-large.svg" alt="Sculptor logo" />						
+												
+	                    <h1 class="text-lg md:text-2xl text-blue-900 font-semibold hover:text-blue-600 my-0 pr-4">Sculptor</h1>
+                    </a>
+                </div>
+
+                <div class="flex flex-1 justify-end items-center text-right md:pl-10">
+                    
+					<a href="https://sculptor-devops.github.io/" target="_blank" class="mr-4 hidden lg:block">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+				
+                                    </div>
+            </div>
+
+                <button class="flex justify-center items-center bg-blue-500 border border-blue-500 h-10 mr-4 px-5 rounded-full lg:hidden focus:outline-none"
+    onclick="navMenu.toggle()"
+>
+    <svg id="js-nav-menu-show" xmlns="http://www.w3.org/2000/svg"
+        class="fill-current text-white h-9 w-4" viewBox="0 0 32 32"
+    >
+        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+    </svg>
+
+    <svg id="js-nav-menu-hide" xmlns="http://www.w3.org/2000/svg"
+        class="hidden fill-current text-white h-9 w-4" viewBox="0 0 36 30"
+    >
+        <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
+    </svg>
+</button>
+
+        </header>
+
+        <main role="main" class="w-full flex-auto bg-main">
+            <section class="container max-w-8xl mx-auto px-6 md:px-8 py-4">
+    <div class="flex flex-col lg:flex-row">
+        <nav id="js-nav-menu" class="nav-menu hidden lg:block">
+            <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/introduction"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Introduction
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Getting Started
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Installation
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started/create-domain"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Create a domain
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started/moving-forward"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Move forward
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/getting-started/troubleshooting"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Troubleshooting
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/commands/domains"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Commands
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/commands/domains"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Domains
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/commands/deploy"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Deploy
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/commands/databases"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Databases
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/commands/backups"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Backups
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/commands/system"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            System
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/platform/compatibility"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Platform
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/platform/compatibility"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Compatibility
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/platform/software"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Software
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/platform/security"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Security
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/advanced/installer"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Advanced
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/advanced/installer"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Installer
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/roadmap"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Roadmap
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/upgrade"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Upgrade
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/contribute"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Contribute
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/about"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            About
+        </a>
+    
+    </li>
+    </ul>
+        </nav>
+
+        <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
+            <h1>Deploy</h1>
+
+<p>Unde the hood Sculptor use <a href="https://deployer.org/docs/getting-started.html">php deployer</a> to run all code provisioning operations such as
+clone, pull and subsequent operations; e.g. php artisan migrate for a Laravel application. The deploy script is customizable in the <strong><em>configs/deployer.php</em></strong>
+after that you need to run <a href="/docs/commands/domains/#configure">configure command</a>. Deployer run a series of stage to run the provisionig, the standard command that run the default stage is <strong><em>deploy</em></strong>. The default stages are two, the first is the <strong><em>install</em></strong> stage that run the first time the system pull your code,
+then the <strong><em>deploy</em></strong> will always used.</p>
+
+<pre><code class="language-shell">$ sudo sculptor domain:deploy example.com
+</code></pre>
+
+<p>The default stage to run is saved in <a href="/docs/commands/domains/#setup">domain preferences setup</a> but can be customized in the command on the fly to run a spot stage.</p>
+
+<pre><code class="language-shell">$ sudo sculptor domain:deploy example.com deploy:mystage
+</code></pre>
+
+<p>After this command the domain i enabled and reachable from the web, webserver configuration is deployed with the logrotate service properties.</p>
+
+<h4 id="structure">Directory structure</h4>
+
+<p>Deployer use specific folder to run, the main is <strong><em>releases</em></strong> that contain all pull the system ever done from the beginngin. To achive the zero downtime deploy
+the current pull is linked to the <strong><em>current</em></strong> directory. Another important folder is the <strong><em>shared</em></strong> one, there is all data that your application need to write to disk. When you pull your sources you need to maintain this files as the previous version, so all data that need to be written to disk are mapped as a link to this folder. For instance <strong><em>.env</em></strong> file and <strong><em>storage</em></strong> folders for a Laravel application are linked from <strong><em>shared/.env</em></strong> and <strong><em>stared/storage</em></strong> to current directory.</p>
+
+<pre><code class="language-shell">$ ls -l /home/www/sites/example.com/
+lrwxrwxrwx 1 www www 40 Oct 27 13:17 current -&gt; /home/www/sites/example.com/releases/11
+
+$ ls -la /home/www/sites/example.com/current/
+lrwxrwxrwx  1 www www 40 Oct 27 13:16 .env -&gt; /home/www/sites/example.com/shared/.env
+lrwxrwxrwx  1 www www 43 Oct 27 13:16 storage -&gt; /home/www/sites/example.com/shared/storage
+
+$ ls -l /home/www/sites/example.com/releases/
+drwxr-xr-x 12 www www 4096 Oct 27 13:09 10
+drwxr-xr-x 12 www www 4096 Oct 27 13:17 11
+drwxr-xr-x 12 www www 4096 Oct 27 13:03 7
+drwxr-xr-x 12 www www 4096 Oct 27 13:04 8
+drwxr-xr-x 12 www www 4096 Oct 27 13:07 9
+</code></pre>
+
+<p>As you can see in <strong><em>releases</em></strong> folder only a limited number of pull will be retained, you can customize this numeber in <strong><em>configs/deployer.php</em></strong> (default is 5).</p>
+
+<h2 id="crontab">Crontab</h2>
+
+<p>When you need do specify a crontab for your user you need to customize <strong><em>configs/crontab</em></strong> files and run *<strong>condifure</strong> command. To apply modifications to the system you need to run this command that is not domain specific, this due to the fact that many domains can share the same system user so crontab is common for thise domains.</p>
+
+<pre><code class="language-shell">$ sudo sculptor domain:crontab
+</code></pre>
+
+<h2 id="worker">Worker</h2>
+
+<p>Applications such as Laravel can have a Queue system that need to be configured under supervisor. Similar to crontab, you can customize <strong><em>configs/worker</em></strong> file and run <strong><em>configure</em></strong>. Then you can enable (or disable) the domain specific supervisor configuration with the command below.</p>
+
+<pre><code class="language-shell">$ sudo sculptor domain:worker example.com enable
+</code></pre>
+
+<h2 id="enable">Enable</h2>
+
+<p>This command run every time in at the end of deploy command, but you can run manually in the case you disabled it.</p>
+
+<pre><code class="language-shell">$ sudo sculptor domain:disable example.com
+</code></pre>
+
+<h2 id="disable">Disble</h2>
+
+<p>When disabled webserver configurations is removed from ative sites toghether with logrotate.</p>
+
+<pre><code class="language-shell">$ sudo sculptor domain:enable example.com
+</code></pre>
+        </div>
+    </div>
+</section>
+        </main>
+
+        <script src="/assets/build/js/main.js?id=a6205a297b7645c123b0"></script>
+
+        <script>
+    const navMenu = {
+        toggle() {
+            const menu = document.getElementById('js-nav-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('lg:block');
+            document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
+            document.getElementById('js-nav-menu-show').classList.toggle('hidden');
+        },
+    }
+</script>
+
+        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+            <ul class="flex flex-col md:flex-row justify-center">
+                <li class="md:mr-2">
+                    &copy; <a href="https://cappellozza.com" title="Alessandro Cappellozza">Alessandro Cappellozza</a> 2020.
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
