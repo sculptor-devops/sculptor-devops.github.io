@@ -306,14 +306,14 @@
 
 <p>For a public repository the clone is not a problem, but with a preivate one you need some step forward to permit autentication.</p>
 
-<h3 id="personal-access-token">Personal access token</h3>
+<h2 id="personal-access-token">Personal access token</h2>
 
 <p>Some git hoster like GitHub let you to create a <a href="https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token">personal access token</a> from your security settings, this token can act like your account so, to be safe, grant only read access.</p>
 
 <pre><code class="language-php">set('repository', 'https://&lt;&lt;MY-ACCESS-TOKEN&gt;&gt;@github.com/laravel/laravel.git');
 </code></pre>
 
-<h3 id="deploy-keys">Deploy keys</h3>
+<h2 id="deploy-keys">Deploy keys</h2>
 
 <p>You can setup a specific key for a repository like <a href="https://docs.github.com/en/free-pro-team@latest/developers/overview/managing-deploy-keys">deploy key</a> function of GitHub. Once generated you need to put your key in the root of your domain e.g. id_rsa. Then you need to add an env variable to the deploy.php file: note that in the repository you need to use git url not https one.</p>
 
@@ -345,7 +345,7 @@ set('env', [
 ]);
 </code></pre>
 
-<h4 id="user-password">Username and Password</h4>
+<h2 id="user-password">Username and Password</h2>
 
 <p>To autenthicate using http you can specify user and password in the git url. This is the wrost practice and is discuraged, use only if no other way work.</p>
 
