@@ -326,6 +326,10 @@ set('env', [
 
 <p>Alternatively you can crate a whole ssh configuration file that you can also put in domain root aside the id_rsa that you generated.</p>
 
+<blockquote>
+  <p><strong><em>GIT_SSH_COMMAND</em></strong> is a valid env variable from git <strong><em>2.10+</em></strong> version, alternatively there is <strong><em>GIT_SSH</em></strong> but require a more shell scripting.</p>
+</blockquote>
+
 <pre><code class="language-bash">Host github.com
    StrictHostKeyChecking no
    UserKnownHostsFile=/dev/null
