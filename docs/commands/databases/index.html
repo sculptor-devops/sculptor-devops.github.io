@@ -299,13 +299,24 @@
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
             <h1>Databases</h1>
 
+<ul>
+<li><a href="#create">Create</a></li>
+<li><a href="#show">Show</a></li>
+<li><a href="#delete">Delete</a></li>
+<li><a href="#user">Create user</a></li>
+<li><a href="#password">Change user password</a></li>
+<li><a href="#delete-user">Delete user</a></li>
+</ul>
+
+<h1 id="create">Create</h1>
+
 <p>To create one db the operation is trivial, you need only to supply a name; the driver is for now implicit and support only MySql databases.</p>
 
 <pre><code class="language-shell">$ sudo sculptor database:create my_database
 Creating domain my_database: ✔
 </code></pre>
 
-<h2>Show</h2>
+<h2 id="show">Show</h2>
 
 <pre><code class="language-shell">$ sudo sculptor database:show
 +-------------+-------+---------------+---------+
@@ -315,7 +326,7 @@ Creating domain my_database: ✔
 +-------------+-------+---------------+---------+
 </code></pre>
 
-<h2>Delete</h2>
+<h2 id="delete">Delete</h2>
 
 <p>If you delete a database you will also delete all associated database user.</p>
 
@@ -323,7 +334,7 @@ Creating domain my_database: ✔
 Deleting database my_database: ✔
 </code></pre>
 
-<h2>Create database user</h2>
+<h2 id="user">Create database user</h2>
 
 <p>A user can be created if associated to a database, you can specify the host and the password; generally you do not need to specify anything and a password will be generated automatically. For the current version of Sculptor only localhost is supported.</p>
 
@@ -332,7 +343,7 @@ Creating user user1@localhost on my_database: ✔
 Password generated: abc123456
 </code></pre>
 
-<h2>Change user password</h2>
+<h2 id="password">Change user password</h2>
 
 <p>As for creation, you can only specify database and user and a new password will be generated automatically.</p>
 
@@ -340,7 +351,7 @@ Password generated: abc123456
 Password generated: abc123456
 </code></pre>
 
-<h2>Delete database user</h2>
+<h2 id="delete-user">Delete database user</h2>
 
 <pre><code class="language-shell">$ sudo sculptor database:delete_user my_database user1
 Deleting user user1@localhost on my_database: ✔

@@ -299,6 +299,24 @@
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
             <h1 id="domains">Domains</h1>
 
+<ul>
+<li><a href="#create">Create</a>
+
+<ul>
+<li><a href="#structure">Directory structure</a></li>
+</ul></li>
+<li><a href="#show">Show</a></li>
+<li><a href="#setup">Setup</a>
+
+<ul>
+<li><a href="#setup-parameters">Parameters</a></li>
+<li><a href="#edit-templates">Edit templates</a></li>
+<li><a href="#placeholders">Placeholders</a></li>
+</ul></li>
+<li><a href="#configure">Configure</a></li>
+<li><a href="#delete">Delete</a></li>
+</ul>
+
 <p>Ay domain is a web server host that have some properties like alias or SSL certificates.
 The domain have a life cycle that is shown by the figure below. Generally you create it, you setup your parameters and condifurations, you apply those preferences
 and deploy to production pulling sources. The system take care that every step is respected and will check every state change.</p>
@@ -400,7 +418,7 @@ domain state, after it you need to run <strong><em>configure</em></strong> to ap
 Running domain setup example.com alias=other-example.com: ✔
 </code></pre>
 
-<h4>Valid parameters</h4>
+<h4 id="setup-parameters">Valid parameters</h4>
 
 <table>
 <thead>
@@ -499,13 +517,13 @@ Running domain setup example.com alias=other-example.com: ✔
 </tbody>
 </table>
 
-<h4>Edit Templates</h4>
+<h4 id="edit-templates">Edit Templates</h4>
 
 <p>In the <strong><em>configs/</em></strong> (see directory structure) folder you can apply your modifications to fit your needs, after this operation you can run <strong><em>configure</em></strong> to create the new configurations. In all files you can use some
 placehoders to auto complete some values. For instance when you crete a <strong>.env</strong> file you need to add database, user and password to create a valid and functional file; sculptor do it for you
 completing those parameters with the setup of the domain, so you don't need to know passwords or remember user or database that are stored elsewhere and linked to your domain.</p>
 
-<h4>Placeholders</h4>
+<h4 id="placeholders">Placeholders</h4>
 
 <table>
 <thead>

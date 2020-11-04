@@ -299,6 +299,16 @@
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
             <h1>Backups</h1>
 
+<ul>
+<li><a href="#create">Create</a></li>
+<li><a href="#show">Show</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#driver">Driver</a></li>
+<li><a href="#run">Run</a></li>
+<li><a href="#blueprint">Blueprint</a></li>
+<li><a href="#delete">Delete</a></li>
+</ul>
+
 <p>You can create a backup job like you did with a domain by running a command; backups can be of three different types. The first is <strong><em>database</em></strong> and it will backup the specified database. The second is <strong><em>domain</em></strong> and do the same thig as the database backup do but for files; so if you want to backup an entire site you need to create a domain backup and a database backup, this due to the fact that a database can be attached to more than one domain. Domain backup will take care of the configurations in <strong><em>configs</em></strong> path and file in <strong><em>shared</em></strong> folder; this because all your application storage must be mapped on this directory (see <a href="/docs/commands/deploy#structure">deploy</a> for more informations). The third type is the <strong><em>blueprint</em></strong> type and is meant to create a backup of all metadata of the Sculpture installation; with this backup you can recreate a mirror of the machine in minutes.</p>
 
 <blockquote>
