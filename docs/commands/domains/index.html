@@ -26,7 +26,7 @@
                     <!-- Insert analytics code here -->
         
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=12d26323998d289c8859">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=2c96b829f292ff228028">
 
         <link rel="stylesheet" href="/assets/cast/asciinema-player.css" rel="stylesheet">
 
@@ -314,6 +314,7 @@
 <li><a href="#placeholders">Placeholders</a></li>
 </ul></li>
 <li><a href="#configure">Configure</a></li>
+<li><a href="#templates">Templates</a></li>
 <li><a href="#delete">Delete</a></li>
 </ul>
 
@@ -323,7 +324,7 @@ and deploy to production pulling sources. The system take care that every step i
 
 <p><img src="/assets/img/states.png" alt="domain states" /></p>
 
-<h2 id="create">Create (New)</h2>
+<h2 id="create"><a href="#create">Create (New)</a></h2>
 
 <p>This command will create site home, configurations, files templates and base a certificate. No web server setup will be done at this stage,
 you will need to use <strong><em>setup</em></strong> and <strong><em>configure</em></strong> before <strong><em>deploy</em></strong> it. Parameters accepted are <strong><em>laravel</em></strong> and <strong><em>generic</em></strong>.</p>
@@ -560,14 +561,19 @@ completing those parameters with the setup of the domain, so you don't need to k
   <td>The system root path e.g /home/www/sites/example.com</td>
 </tr>
 <tr>
-  <td><strong>{HOME}</strong></td>
+  <td><strong>{CURRENT}</strong></td>
   <td>all</td>
-  <td>The home as recorded in the db, the default is public</td>
+  <td>The root of the application e.g /home/www/sites/example.com/current</td>
 </tr>
 <tr>
   <td><strong>{PUBLIC}</strong></td>
   <td>all</td>
   <td>The home directory e.g. /home/www/sites/example.com/current/public</td>
+</tr>
+<tr>
+  <td><strong>{HOME}</strong></td>
+  <td>all</td>
+  <td>The home as recorded in the db, the default is public</td>
 </tr>
 <tr>
   <td><strong>{REPOSITORY}</strong></td>
@@ -628,6 +634,19 @@ completing those parameters with the setup of the domain, so you don't need to k
 
 <pre><code class="language-shell">$ sudo sculptor domain:configure example.com
 Running domain condifugre example.com: ✔
+</code></pre>
+
+<h2 id="templates">Templates</h2>
+
+<p>You can restore <strong><em>configs</em></strong> and <strong><em>deploy</em></strong> templates to default values, this can occur also when you upgrade sculptor to a newer version and you whant to apply new configurations; because is a potentially descructive operaion, because will delete all your config customizaionts, you will be ascked to confirm.</p>
+
+<pre><code class="language-shell">$ sudo sculptor domain:templates example.com
+ This operation will DELETE ALL customizations to example.com configs and deploy, do you want to continue?
+(type yes or y to continue):
+ &gt; yes
+
+Domain templates example.com: ✔
+Now you need to run domain:configure example.com to make modifications
 </code></pre>
 
 <h2 id="delete">Delete</h2>
