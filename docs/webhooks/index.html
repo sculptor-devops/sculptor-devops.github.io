@@ -26,7 +26,7 @@
                     <!-- Insert analytics code here -->
         
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=12d26323998d289c8859">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=2c96b829f292ff228028">
 
         <link rel="stylesheet" href="/assets/cast/asciinema-player.css" rel="stylesheet">
 
@@ -329,14 +329,14 @@
 | deploy command    | deploy                                                    |
 | install command   | deploy:install                                            |
 | git uri           | https://github.com/laravel/laravel.git                    |
-| deploy url        | https://1.2.3.4:9443/api/v1/deploy/abc1234/abc1234        |
+| deploy url        | https://1.2.3.4:9443/webhooks/v1/deploy/abc1234/abc1234   |
 | deploy provider   | github                                                    |
 | deploy branch     | master                                                    |
 +-------------------+-----------------------------------------------------------+
 </code></pre>
 
 <blockquote>
-  <p>In this case the URL il <strong><em>https://1.2.3.4:9443/api/v1/deploy/abc1234/abc1234</em></strong></p>
+  <p>In this case the URL il <strong><em>https://1.2.3.4:9443/webhooks/v1/deploy/abc1234/abc1234</em></strong></p>
 </blockquote>
 
 <h2 id="github">Github</h2>
@@ -353,7 +353,7 @@
 <tbody>
 <tr>
   <td><strong><em>Payload URL</em></strong></td>
-  <td>https://1.2.3.4:9443/api/v1/deploy/abc1234/abc1234</td>
+  <td>https://1.2.3.4:9443/webhooks/v1/deploy/abc1234/abc1234</td>
 </tr>
 <tr>
   <td><strong><em>Content type</em></strong></td>
