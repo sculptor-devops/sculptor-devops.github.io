@@ -9,7 +9,7 @@
         <meta property="og:site_name" content="Sculptor"/>
         <meta property="og:title" content="Domains | Sculptor"/>
         <meta property="og:description" content="Sculptor devops domains commands"/>
-        <meta property="og:url" content="https://https://sculptor-devops.github.io/docs\commands/domains"/>
+        <meta property="og:url" content="https://sculptor-devops.github.io/docs\commands/domains"/>
         <meta property="og:image" content="/assets/img/logo.png"/>
         <meta property="og:type" content="website"/>
 
@@ -19,7 +19,7 @@
         
         <title>Sculptor | Domains</title>
 
-        <link rel="home" href="https://https://sculptor-devops.github.io">
+        <link rel="home" href="https://sculptor-devops.github.io">
         <link rel="icon" href="/favicon.ico">
 
         
@@ -323,6 +323,7 @@
 <li><a href="#placeholders">Placeholders</a></li>
 </ul></li>
 <li><a href="#configure">Configure</a></li>
+<li><a href="#certbot">Certbot</a></li>
 <li><a href="#templates">Templates</a></li>
 <li><a href="#delete">Delete</a></li>
 </ul>
@@ -527,6 +528,10 @@ Running domain setup example.com alias=other-example.com: ✔
 </tbody>
 </table>
 
+<blockquote>
+  <p>If you setup <strong>certificate</strong> parameter with <strong>lets-encrypt</strong> remember to activate with certbot command (see below).</p>
+</blockquote>
+
 <h4 id="edit-templates">Edit Templates</h4>
 
 <p>In the <strong><em>configs/</em></strong> (see directory structure) folder you can apply your modifications to fit your needs, after this operation you can run <strong><em>configure</em></strong> to create the new configurations. In all files you can use some
@@ -662,7 +667,18 @@ completing those parameters with the setup of the domain, so you don't need to k
 <p>When you <strong><em>setup</em></strong> a domain or modify a template configuration you need to run configure to apply those modifications. All files will be created or updated in the site root path.</p>
 
 <pre><code class="language-shell">$ sudo sculptor domain:configure example.com
-Running domain condifugre example.com: ✔
+Running domain confiugre example.com: ✔
+</code></pre>
+
+<h2 id="certbot">Certbot</h2>
+
+<p>This command communicate with the certbot tool to obtain Let's Encrypts certificates; to run this command need the domain to be deployed before and be available on the web. The first operation is <strong><em>register</em></strong> and will run the certbot for the first time. The second command <strong><em>deploy</em></strong> will apply certificates to your domain. After this operations the certificate will auto-renew and will be managed by the certbot.</p>
+
+<pre><code class="language-shell">$ sudo sculptor domain:certbot example.com register
+Running certbot register example.com: ✔
+
+$ sudo sculptor domain:certbot example.com deploy
+Running certbot register example.com: ✔
 </code></pre>
 
 <h2 id="templates">Templates</h2>

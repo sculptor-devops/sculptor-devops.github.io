@@ -9,7 +9,7 @@
         <meta property="og:site_name" content="Sculptor"/>
         <meta property="og:title" content="System | Sculptor"/>
         <meta property="og:description" content="Sculptor devops system commands"/>
-        <meta property="og:url" content="https://sculptor-devops.github.io/docs\commands/system"/>
+        <meta property="og:url" content="https://sculptor-devops.github.io/docs\commands/alarms"/>
         <meta property="og:image" content="/assets/img/logo.png"/>
         <meta property="og:type" content="website"/>
 
@@ -310,7 +310,6 @@
 
 <ul>
 <li><a href="#configuration">Configuration</a></li>
-<li><a href="#user">Users</a></li>
 <li><a href="#dameons">Daemons</a></li>
 <li><a href="#events">Events</a></li>
 <li><a href="#tasks">Tasks</a></li>
@@ -335,26 +334,6 @@
 | Operating system  | 20.04.1 LTS (Focal Fossa) |
 | Architecture      | x86_64 64 bit             |
 +-------------------+---------------------------+
-</code></pre>
-
-<h2 id="user">User</h2>
-
-<p>You need to authenticate to use rest API, so you need to create a user.</p>
-
-<pre><code class="language-shell">$ sudo sculptor system:user create user@example.com
-
-$ sudo sculptor system:user password user@example.com
-
-$ sudo sculptor system:user delete user@example.com
-
-$ sudo sculptor system:user show
-</code></pre>
-
-<p>You may also need to manage user generated token, you can list and revoke.</p>
-
-<pre><code class="language-shell">$ sudo sculptor system:user token user@example.com
-
-$ sudo sculptor system:user revoke 123abc
 </code></pre>
 
 <h2 id="configuration">Configuration</h2>
