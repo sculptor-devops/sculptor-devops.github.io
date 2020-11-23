@@ -16,6 +16,7 @@
         <meta name="twitter:image:alt" content="Sculptor">
         <meta name="twitter:card" content="summary_large_image">
 
+                    <meta name="generator" content="tighten_jigsaw_doc">
         
         <title>Sculptor | Compatibility</title>
 
@@ -30,6 +31,7 @@
 
         <link rel="stylesheet" href="/assets/cast/asciinema-player.css" rel="stylesheet">
 
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
             </head>
 
     <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
@@ -48,6 +50,32 @@
                         <i class="fab fa-github fa-2x"></i>
                     </a>
 				
+                                            <button
+    title="Start searching"
+    type="button"
+    class="flex md:hidden bg-gray-100 hover:bg-blue-100 justify-center items-center border border-gray-500 rounded-full focus:outline-none h-10 px-3"
+    onclick="searchInput.toggle()"
+>
+    <img src="/assets/img/magnifying-glass.svg" alt="search icon" class="h-4 w-4 max-w-none">
+</button>
+
+<div id="js-search-input" class="docsearch-input__wrapper hidden md:block">
+    <label for="search" class="hidden">Search</label>
+
+    <input
+        id="docsearch-input"
+        class="docsearch-input relative block h-10 transition-fast w-full lg:w-1/2 xl:w-1/3 bg-gray-100 outline-none rounded-full text-gray-700 border border-gray-500 focus:border-blue-400 ml-auto px-4 pb-0"
+        name="docsearch"
+        type="text"
+        placeholder="Search"
+    >
+
+    <button
+        class="md:hidden absolute pin-t pin-r h-full font-light text-3xl text-blue-500 hover:text-blue-600 focus:outline-none -mt-px pr-7"
+        onclick="searchInput.toggle()"
+    >&times;</button>
+</div>
+
                                     </div>
             </div>
 
@@ -379,7 +407,24 @@ without problems.</p>
         },
     }
 </script>
+            <script type="text/javascript">
+            docsearch({
+                apiKey: 'bfe2f70b574268a443312bd71480f20c',
+                indexName: 'sculptor-devops',
+                inputSelector: '#docsearch-input',
+                debug: false // Set debug to true if you want to inspect the dropdown
+            });
 
+            const searchInput = {
+                toggle() {
+                    const menu = document.getElementById('js-search-input');
+                    menu.classList.toggle('hidden');
+                    menu.classList.toggle('md:block');
+                    document.getElementById('docsearch-input').focus();
+                },
+            }
+        </script>
+    
         <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
             <ul class="flex flex-col md:flex-row justify-center">
                 <li class="md:mr-2">
