@@ -26,7 +26,7 @@
                     <!-- Insert analytics code here -->
         
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=1c39850f7ae320f70669">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=5a8e81c7d641b4f1addf">
 
         <link rel="stylesheet" href="/assets/cast/asciinema-player.css" rel="stylesheet">
 
@@ -350,7 +350,7 @@ then the <strong><em>deploy</em></strong> will always used.</p>
 <h4 id="structure">Directory structure</h4>
 
 <p>Deployer use specific folder to run, the main is <strong><em>releases</em></strong> that contain all pull the system ever done from the beginngin. To achive the zero downtime deploy
-the current pull is linked to the <strong><em>current</em></strong> directory. Another important folder is the <strong><em>shared</em></strong> one, there is all data that your application need to write to disk. When you pull your sources you need to maintain this files as the previous version, so all data that need to be written to disk are mapped as a link to this folder. For instance <strong><em>.env</em></strong> file and <strong><em>storage</em></strong> folders for a Laravel application are linked from <strong><em>shared/.env</em></strong> and <strong><em>stared/storage</em></strong> to current directory.</p>
+the current pull is linked to the <strong><em>current</em></strong> directory. Another important folder is the <strong><em>shared</em></strong> one, there is all data that your application need to write to disk. When you pull your sources you need to maintain this files as the previous version, so all data that need to be written to disk are mapped as a link to this folder. For instance <strong><em>.env</em></strong> file and <strong><em>storage</em></strong> folders for a Laravel application are linked from <strong><em>shared/.env</em></strong> and <strong><em>shared/storage</em></strong> to current directory.</p>
 
 <pre><code class="language-shell">$ ls -l /home/www/sites/example.com/
 lrwxrwxrwx 1 www www 40 Oct 27 13:17 current -&gt; /home/www/sites/example.com/releases/11
@@ -419,7 +419,7 @@ drwxr-xr-x 12 www www 4096 Oct 27 13:07 9
         <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
             <ul class="flex flex-col md:flex-row justify-center">
                 <li class="md:mr-2">
-                    idea by <a href="https://cappellozza.com" title="Alessandro Cappellozza">Alessandro Cappellozza</a> &copy; 2020.
+                    idea by <a href="https://cappellozza.com" title="Alessandro Cappellozza">Alessandro Cappellozza</a> &copy; 2021.
                 </li>
 
                 <li class="md:mr-2">
