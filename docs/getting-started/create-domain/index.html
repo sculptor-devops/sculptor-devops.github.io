@@ -324,7 +324,7 @@
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
             <h1>Create a domain</h1>
 
-<p>The first thing you need to create is a domain, it represent the host that will be shown by the webserver and all associated services.
+<p>The first thing you need to create is a domain, it represents the host that will be shown by the webserver and all associated services.
 Launching this command will create directory structure, configurations and deploy procedures.</p>
 
 <pre><code class="language-shell">$ sudo sculptor domain:create example.com laravel
@@ -333,7 +333,7 @@ Running create domain example.com: ✔
 
 <h3>Setup repository</h3>
 
-<p>If all default preferences are fine for you the mininum setup is to define your git repository as follow.</p>
+<p>If all default preferences are fine for you, the mininum setup is to define your git repository as follow.</p>
 
 <pre><code class="language-shell">$ sudo sculptor domain:setup example.com vcs https://github.com/username/repository
 Running setup domain example.com vcs=https://github.com/username/repository: ✔
@@ -347,7 +347,7 @@ Running setup domain example.com vcs=https://github.com/username/repository: ✔
 
 <h3>Configure</h3>
 
-<p>Once you are ready with customizations you need to apply them to your domain with the command below.
+<p>Once you are ready with customizations, you need to apply them to your domain with the command below.
 With this operaton sculptor will setup and prepare all conifugration files to prepare for the deploy.</p>
 
 <pre><code class="language-shell">$ sudo sculptor domain:configure example.com
@@ -356,8 +356,8 @@ Running domain configure example.com: ✔
 
 <h3>Deploy</h3>
 
-<p>This operation can take several minutes, all condifuration files will be put in production, you repository will be cloned and vendo package installed.
-Afet this the domain is enabled and from now is available from the ourside.</p>
+<p>This operation can take several minutes, all condifuration files will be put in production, your repository will be cloned and vendor package installed.
+After this the domain is enabled and available from the outside.</p>
 
 <pre><code class="language-shell">$ sudo sculptor domain:deploy example.com
 Running deploy configure example.com: ✔
@@ -365,7 +365,7 @@ Running deploy configure example.com: ✔
 
 <h3>Finsh</h3>
 
-<p>Once deployed the deploy is finished your domain is ready and the site is running; now you can dig deeper in the commands to configure e.g. backups or crontabs.</p>
+<p>Once the deploy is finished your domain is ready and the site is running; now you can dig deeper in the commands to configure additional features (e.g. backups or crontabs).</p>
 
 <p><a href="/docs/getting-started/moving-forward">Moving forward &raquo;</a></p>
         </div>
