@@ -324,7 +324,7 @@
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
             <h1 id="webhooks">Webhooks</h1>
 
-<p>You can setup an enpoint to let your git provider to send you a post when a push is done to your repository. To configure it you need to show your domain configuration using <a href="/docs/commands/domains/#show">domain:show</a> command, see <strong><em>deploy url</em></strong> parameter.</p>
+<p>You can setup an enpoint to let your git provider to send you a post when a push is done to your repository. In order to configure it, you need to check your domain configuration using the <a href="/docs/commands/domains/#show">domain:show</a> command, see <strong><em>deploy url</em></strong> parameter.</p>
 
 <pre><code class="language-shell">$ sudo sculptor domain:show example.com
 +-------------------+-----------------------------------------------------------+
@@ -357,7 +357,7 @@
 
 <h2 id="github">Github</h2>
 
-<p>I your provider is setupped to github (the default) you can follow the istructions of the documentation at <a href="https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/webhooks">Github webhooks</a>. You only need to open your repository <strong><em>settings</em></strong> than <strong><em>Webhooks</em></strong> and press <strong><em>Add webhook</em></strong>; there setup the data as seen in the example below.</p>
+<p>If your provider was set up to github (the default) you can follow the istructions of the documentation at <a href="https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/webhooks">Github webhooks</a>. You only need to open your repository <strong><em>settings</em></strong>, then select <strong><em>Webhooks</em></strong> and press <strong><em>Add webhook</em></strong>; once there, set the values as shown in the example below.</p>
 
 <table>
 <thead>
@@ -384,7 +384,7 @@
 
 <h2 id="custom">Custom</h2>
 
-<p>If you have another provider of git repository you can use it in the same way but remember that all controls and check validations will not be done by the custom provider and the branch corrispondence will not be granted. To change this settings of the domain see <a href="/docs/commands/domains/#setup">setup</a> command and set provider to custom.</p>
+<p>If you have another git repository provider, you can use it in the same way but remember that all controls and check validations will not be done by the custom provider and the branch corrispondence will not be granted. To change these settings of the domain see <a href="/docs/commands/domains/#setup">setup</a> command and set provider to custom.</p>
         </div>
     </div>
 </section>
