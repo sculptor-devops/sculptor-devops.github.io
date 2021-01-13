@@ -332,10 +332,10 @@
 <li><a href="#disable">Disable</a></li>
 </ul>
 
-<p>Unde the hood Sculptor use <a href="https://deployer.org/docs/getting-started.html">php deployer</a> to run all code provisioning operations such as
-clone, pull and subsequent operations; e.g. php artisan migrate for a Laravel application. The deploy script is customizable in the <strong><em>configs/deployer.php</em></strong>
-after that you need to run <a href="/docs/commands/domains/#configure">configure command</a>. Deployer run a series of stage to run the provisionig, the standard command that run the default stage is <strong><em>deploy</em></strong>. The default stages are two, the first is the <strong><em>install</em></strong> stage that run the first time the system pull your code,
-then the <strong><em>deploy</em></strong> will always used.</p>
+<p>Under the hood Sculptor uses <a href="https://deployer.org/docs/getting-started.html">php deployer</a> to run all code provisioning operations such as
+clone, pull and subsequent operations; e.g. php artisan migrate for a Laravel application. The deploy script is customizable in the <strong><em>configs/deployer.php</em></strong>.
+After that you need to run <a href="/docs/commands/domains/#configure">configure command</a>. Deployer runs a series of stages to run the provisioning, the standard command that runs the default stage is <strong><em>deploy</em></strong>. The default stages are two, the first is the <strong><em>install</em></strong> stage that run the first time the system pulls your code,
+then the <strong><em>deploy</em></strong> is always used.</p>
 
 <pre><code class="language-shell">$ sudo sculptor domain:deploy example.com
 </code></pre>
@@ -345,12 +345,12 @@ then the <strong><em>deploy</em></strong> will always used.</p>
 <pre><code class="language-shell">$ sudo sculptor domain:deploy example.com deploy:mystage
 </code></pre>
 
-<p>After this command the domain i enabled and reachable from the web, webserver configuration is deployed with the logrotate service properties.</p>
+<p>After this command the domain is enabled and reachable from the web, webserver configuration is deployed with the logrotate service properties.</p>
 
 <h4 id="structure">Directory structure</h4>
 
-<p>Deployer use specific folder to run, the main is <strong><em>releases</em></strong> that contain all pull the system ever done from the beginngin. To achive the zero downtime deploy
-the current pull is linked to the <strong><em>current</em></strong> directory. Another important folder is the <strong><em>shared</em></strong> one, there is all data that your application need to write to disk. When you pull your sources you need to maintain this files as the previous version, so all data that need to be written to disk are mapped as a link to this folder. For instance <strong><em>.env</em></strong> file and <strong><em>storage</em></strong> folders for a Laravel application are linked from <strong><em>shared/.env</em></strong> and <strong><em>shared/storage</em></strong> to current directory.</p>
+<p>Deployer use specific folder to run, the main is <strong><em>releases</em></strong> that contain all the pulls the system ever done from the beginning. To achieve zero downtime deploy
+the current pull is linked to the <strong><em>current</em></strong> directory. Another important folder is the <strong><em>shared</em></strong> one, there is all data that your application needs to write to disk. When you pull your sources you need to maintain these files as the previous version, so all data that need to be written to disk are mapped as a link to this folder. For instance <strong><em>.env</em></strong> file and <strong><em>storage</em></strong> folders for a Laravel application are linked from <strong><em>shared/.env</em></strong> and <strong><em>shared/storage</em></strong> to current directory.</p>
 
 <pre><code class="language-shell">$ ls -l /home/www/sites/example.com/
 lrwxrwxrwx 1 www www 40 Oct 27 13:17 current -&gt; /home/www/sites/example.com/releases/11
@@ -371,28 +371,28 @@ drwxr-xr-x 12 www www 4096 Oct 27 13:07 9
 
 <h2 id="crontab">Crontab</h2>
 
-<p>When you need do specify a crontab for your user you need to customize <strong><em>configs/crontab</em></strong> files and run *<strong>condifure</strong> command. To apply modifications to the system you need to run this command that is not domain specific, this due to the fact that many domains can share the same system user so crontab is common for thise domains.</p>
+<p>When you need do specify a crontab for your user, you need to customize <strong><em>configs/crontab</em></strong> files and run *<strong>configure</strong> command. To apply modifications to the system you need to run this command. Note that is not domain specific, due to the fact that many domains can share the same system user so crontab is common for these domains.</p>
 
 <pre><code class="language-shell">$ sudo sculptor domain:crontab
 </code></pre>
 
 <h2 id="worker">Worker</h2>
 
-<p>Applications such as Laravel can have a Queue system that need to be configured under supervisor. Similar to crontab, you can customize <strong><em>configs/worker</em></strong> file and run <strong><em>configure</em></strong>. Then you can enable (or disable) the domain specific supervisor configuration with the command below.</p>
+<p>Applications such as Laravel can have a Queue system that needs to be configured under supervisor. Similar to crontab, you can customize <strong><em>configs/worker</em></strong> file and run <strong><em>configure</em></strong>. Then you can enable (or disable) the domain specific supervisor configuration with the command below.</p>
 
 <pre><code class="language-shell">$ sudo sculptor domain:worker example.com enable
 </code></pre>
 
 <h2 id="enable">Enable</h2>
 
-<p>This command run every time in at the end of deploy command, but you can run manually in the case you disabled it.</p>
+<p>This command runs every time at the end of deploy command, but you can run it manually in the case you disabled it.</p>
 
 <pre><code class="language-shell">$ sudo sculptor domain:disable example.com
 </code></pre>
 
-<h2 id="disable">Disble</h2>
+<h2 id="disable">Disable</h2>
 
-<p>When disabled webserver configurations is removed from ative sites toghether with logrotate.</p>
+<p>When disabled webserver configurations are removed from active sites, along with logrotate.</p>
 
 <pre><code class="language-shell">$ sudo sculptor domain:enable example.com
 </code></pre>
