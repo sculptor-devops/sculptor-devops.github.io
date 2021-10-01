@@ -541,6 +541,12 @@ Running domain setup example.com alias=other-example.com: ✔
   <td>string</td>
   <td>is the user needed by the database parameter to access to the db.</td>
 </tr>
+<tr>
+  <td><strong>engine</strong></td>
+  <td>8.0</td>
+  <td>string</td>
+  <td>the php version you want to use (warning befose need to be installed with installer, see advance).</td>
+</tr>
 </tbody>
 </table>
 
@@ -608,7 +614,12 @@ completing those parameters with the setup of the domain, so you don't need to k
 <tr>
   <td><strong>{PHP_VERSION}</strong></td>
   <td>all</td>
-  <td>The version of the php interpreter, default is 7.4</td>
+  <td>The version of the php interpreter, default is 8.0</td>
+</tr>
+<tr>
+  <td><strong>{PHP}</strong></td>
+  <td>all</td>
+  <td>absolute path of the php interpreter, default is 8.0</td>
 </tr>
 <tr>
   <td><strong>{REPOSITORY}</strong></td>
